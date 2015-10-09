@@ -6,6 +6,8 @@
 #define P_CMD "hexanalyst"
 #define P_VERSION "0.0.1"
 
+#define PRINTIF(a, b) ((a) >= 21 && (a) <= (126) ? (a) : (b))
+
 /*
 	Function: ha_read_file_hex (char* filename, int seekpos, int start, int end);
 	Description: Reads a file and display its bytes and the bits of the bytes.
@@ -32,12 +34,22 @@ static int ha_read_file_hex (char* filename, int seekpos, int start, int end)
 	{
 		fread (&byte, sizeof (char), 1, afile);
 
-		printf ("%x", byte);
+		printf ("| %c - %i - %x\t", PRINTIF (byte, ' '), byte, byte);
 
 		for (j = 0; j < 8; j++)
 		{
 			bit = (byte >> j) & 1;
-			printf ("\t%i - %i\n", j, bit);
+			
+			if (j == 1)
+			{
+				printf ("----------------");
+			}
+			else if (j != 0)
+			{
+				printf ("\t\t");
+			}
+			
+			printf ("|%i - %i\n", j, bit);
 		}
 		printf ("\n");
 	}
