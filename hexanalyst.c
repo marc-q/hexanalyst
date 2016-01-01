@@ -1,4 +1,4 @@
-/* Copyright 2015 Marc Volker Dickmann */
+/* Copyright 2015 - 2016 Marc Volker Dickmann */
 /* Project: Hexanalyst */
 #include <stdio.h>
 #include <stdlib.h>
@@ -119,7 +119,7 @@ static int ha_read_file_binary (char* filename, int view, int seekpos, int end)
 	switch (view)
 	{
 		case 0:
-			ha_view_bits (bfile, seekpos, end);
+			ha_view_bits_two (bfile, seekpos, end);
 			break;
 		case 1:
 			ha_view_ascii (bfile, seekpos, end);
