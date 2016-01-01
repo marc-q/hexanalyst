@@ -180,7 +180,7 @@ int main (int argc, char* argv[])
 	
 	useascii = seekpos = 0;
 	
-	printf ("Hexanalyst v. %s (c) 2015 Marc Volker Dickmann\n\n", P_VERSION);
+	printf ("Hexanalyst v. %s (c) 2015 - 2016 Marc Volker Dickmann\n\n", P_VERSION);
 
 	if (argc == 2)
 	{
