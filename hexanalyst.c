@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <getopt.h>
+#include <ctype.h>
 #include "lib/dutils.h"
 
 #define P_CMD "hexanalyst"
@@ -119,7 +120,7 @@ static int ha_read_file_binary (char* filename, int view, int seekpos, int end)
 	switch (view)
 	{
 		case 0:
-			ha_view_bits_two (bfile, seekpos, end);
+			ha_view_bits (bfile, seekpos, end);
 			break;
 		case 1:
 			ha_view_ascii (bfile, seekpos, end);
