@@ -106,7 +106,7 @@ static void ha_view_ascii (FILE* bfile, int seekpos, int end)
 	Description: Reads a file and display its bytes and the bits of the bytes.
 	InitVersion: 0.0.1
 */
-static int ha_read_file_binary (char* filename, int view, int seekpos, int end)
+static short ha_read_file_binary (char* filename, int view, int seekpos, int end)
 {
 	FILE *bfile;
 
