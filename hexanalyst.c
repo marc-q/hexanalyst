@@ -10,7 +10,7 @@
 #define P_CMD "hexanalyst"
 #define P_VERSION "0.0.1"
 
-#define PRINTIF(a, b) ((a) >= 21 && (a) <= (126) ? (a) : (b))
+#define PRINTIF(a,b) ((a) >= 21 && (a) <= (126) ? (a) : (b))
 
 /*
 	Function: utils_streq (char* one, char* two);
