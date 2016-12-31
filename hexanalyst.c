@@ -1,4 +1,4 @@
-/* Copyright 2015 - 2016 Marc Volker Dickmann */
+/* Copyright 2015 - 2017 Marc Volker Dickmann */
 /* Project: Hexanalyst */
 #include <stdio.h>
 #include <stdlib.h>
@@ -181,7 +181,7 @@ int main (int argc, char* argv[])
 	
 	useascii = seekpos = 0;
 	
-	printf ("Hexanalyst v. %s (c) 2015 - 2016 Marc Volker Dickmann\n\n", P_VERSION);
+	printf ("Hexanalyst v. %s (c) 2015 - 2017 Marc Volker Dickmann\n\n", P_VERSION);
 
 	if (argc == 2)
 	{
